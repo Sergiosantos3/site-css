@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
     <title>Document</title>
 </head>
+
 <body>
-    <main class="container">
-        <a href="#" class="logo-center" target="iframe_conteudo">LIBRAS<span> .info</span></a>
+    <div class="container">
+        <div class="logo-center">LIBRAS<span>.info</span></div>
+        <p class="subtitle">Crie sua conta gratuita e comece a aprender LIBRAS hoje!</p>
 
-        <div class="input-cadastro">
-            <input placeholder="Usuario" type="email" id="email" name="email">
-        </div>
-        <div class="input-cadastro">
-            <input placeholder="Senha" type="password" id="senha" name="senha">
-        </div>
-        <button type="submit" class="cadastro"></button>
-        <div class="remember-forgot">
-            <a href="#">Ja tenho uma conta</a>
+        <form>
+            <div class="input-cadastro">
+                <input type="text" name="nome" placeholder="Nome completo" required>
+            </div>
+            <div class="input-cadastro">
+                <input type="email" name="email" placeholder="E-mail" required>
+            </div>
+            <div class="input-cadastro">
+                <input type="password" name="senha" placeholder="Crie uma senha" required minlength="6">
+            </div>
+            <div class="input-cadastro">
+                <input type="password" name="confirmar_senha" placeholder="Confirme a senha" required minlength="6">
+            </div>
+            <div class="date-cadastro">
+               <input type="date" name="data_nascimento" required>
+            </div>
+
+            <div class="options-nivellibras">
+                <select name="nivel_libras">
+                    <option value="">Qual seu nível em LIBRAS?</option>
+                    <option value="1">Nunca estudei (iniciante)</option>
+                    <option value="2">Já sei o básico</option>
+                    <option value="3">Intermediário / Avançado</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-cadastro">Criar Minha Conta</button>
+        </form>
+
+        <div class="login-link">
+            Já tem conta? <a href="login.html" target="_parent">Fazer login</a>
         </div>
 
-        <a href="index.html" class="voltar" target="iframe_conteudo">voltar</a>
+        <a href="conteudo.html" class="voltar" target="_parent">← Voltar ao início</a>
+    </div>
     </main>
 </body>
+
 </html>
