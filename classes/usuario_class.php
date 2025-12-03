@@ -1,5 +1,5 @@
 <?php
-require_once('../classes/db_local.php');
+require_once __DIR__ . '/db_local.php';
 
 class Usuario{
     public $id;
