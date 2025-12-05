@@ -32,8 +32,8 @@ class Usuario{
     }
 
     public function Logar(){
-        $sql = "SELECT * FROM usuarios WHERE email = ? AND senha_hash = ?";
-        $banco = Banco::conectar(); //conecta com o banco de dados.
+        $sql = "SELECT * FROM USUARIOS WHERE email = ? and senha_hash = ?";
+        $banco = Banco::conectar();
         $comando = $banco->prepare($sql);
         $comando->execute([
             $this->email,
