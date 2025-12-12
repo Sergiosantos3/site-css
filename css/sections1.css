@@ -73,11 +73,11 @@
 /* Card transparente superior */
 .card-top {
   position: absolute;
-  top: 35px;
-  left: 80%;
+  top: 10px;
+  left: 74%;
   transform: translateX(-50%);
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   backdrop-filter: blur(10px);
@@ -86,10 +86,10 @@
 /* Círculo central */
 .circle-center {
   position: relative;
-  left: 30%;
-  top: 8%;
-  width: 350px;
-  height: 350px;
+  left: 10%;
+  top: 2%;
+  width: 330px;
+  height: 330px;
   background: radial-gradient(circle, rgba #3c678b 0%, rgba(69, 90, 100, 0.9) 100%);
   border-radius: 70%;
   display: flex;
@@ -113,16 +113,16 @@
 }
 
 
-/* .emoji-large {
-  font-size: 120px;
-} */
+.emoji-large {
+  font-size: 100px;
+}
 
 /* Estilo dos cards */
-/* .card {
+.card {
   position: absolute;
   background: white;
   border-radius: 16px;
-  padding: 20px 24px;
+  padding: 14px 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
@@ -130,15 +130,15 @@
   gap: 8px;
   z-index: 2;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-} */
+}
 
-/* .card:hover {
+.card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
 }
 
 .emoji {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .card p {
@@ -146,16 +146,42 @@
   font-weight: 500;
   color: #333;
   margin: 0;
-} */
+  top: 0px;
+  left: 0px;
+}
 
 /* Posicionamento do card "Olá" */
-/* .card-hello {
-  top: 200px;
-  right: 180px;
-} */
+.card-hello {
+  top: 130px;
+  right: 39px;
+}
 
 /* Posicionamento do card "Obrigado" */
-/* .card-thanks {
-  bottom: 120px;
-  left: 120px;
-} */
+.card-thanks {
+  bottom: 90px;
+  left: 160px;
+}
+
+.card-inferior {
+  position: absolute;
+  top: 360px;
+  left: -900px;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+.card-top-circle {
+  position: absolute;
+  top: 110px;
+  left: -920px;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.1);
+  background-color: #445163;
+  border-radius: 70%;
+  backdrop-filter: blur(10px);
+}
